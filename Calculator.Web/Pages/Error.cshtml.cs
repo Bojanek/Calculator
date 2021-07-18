@@ -21,6 +21,7 @@ namespace Calculator.Web.Pages
         public ErrorModel(ILogger<ErrorModel> logger)
         {
             _logger = logger;
+            // testing this stuff
         }
 
         public void OnGet()
