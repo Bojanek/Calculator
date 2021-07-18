@@ -20,9 +20,17 @@ namespace Calculator.Wpf
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private int Count { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Count++; // Count = Count +1;
+            Simple_txt.Text = "some new text "  + Count;
         }
     }
 }
